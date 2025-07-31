@@ -1,13 +1,290 @@
 <!doctype html>
+<!--suppress HtmlFormInputWithoutLabel -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Frontend CV</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <div class="wrapper">
+      <div class="container">
+        <div class="introductionContainer">
+            <img src="/src/assets/profileImg.png" alt="damn" class="introductionContainer__profilePicture">
+            <div class="introductionContainer-introductionMessage">
+                <p class="introductionContainer-introductionMessage__staticText">Hello 👋🏻 I’m</p>
+                <div class="introductionContainer-introductionMessage-nameAndProfession">
+                  <input type="text" name="Resume's holder name" class="introductionContainer-introductionMessage-nameAndProfession__name " value="Karthik SR">
+                  <!-- https://html-validate.org/rules/input-missing-label.html - All input elements must have an associated label or accessible name. -->
+                  <input type="text" name="Resume's holder profession" class="introductionContainer-introductionMessage-nameAndProfession__profession" value="UX/UI Designer">
+                </div>
+            </div>
+            <div class="introductionContainer-proficiencyInLanguages">
+              <p class="introductionContainer-proficiencyInLanguages__blockName">Languages</p>
+              <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer">
+                <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency">
+                    <input name="Language" class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__language" value="English">
+                    <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__languageProficiency percent100"></div>
+                </div>
+                <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency">
+                    <input name="Language" class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__language" value="Malayam">
+                    <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__languageProficiency percent80"></div>
+                </div>
+                <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency">
+                    <input name="Language" class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__language" value="Hindi">
+                    <div class="introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__languageProficiency percent20"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="experienceAndToolsContainer">
+              <div class="experiencesContainer">
+                  <p class="experiencesContainer__blockName">Experience</p>
+                  <div class="experiencesContainer-experiencesList">
+                      <div class="experiencesContainer-experiencesList-experience">
+                          <div class="experiencesContainer-experiencesList-experience-header">
+                              <div class="experiencesContainer-experiencesList-experience-header-occupationPeriod">
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__startDate"
+                                         name="Experience Start Date"
+                                         value="Jun. 2023"
+                                  >
+                                  <p class="experiencesContainer-experiencesList-experience-header-occupationPeriod__separator">&nbsp;-&nbsp;</p>
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__endDate"
+                                         name="Experience End Date"
+                                         value="Present"
+                                  >
+                              </div>
+                              <button class="experiencesContainer-experiencesList-experience-header__mostRecentExperience">
+                                  most recent
+                              </button>
+                          </div>
+                          <div class="experiencesContainer-experiencesList-experience-description">
+                              <div class="experiencesContainer-experiencesList-experience-description-occupationContainer">
+                                  <input name="Position Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__positionName"
+                                         value="Frontend Developer">
+                                  <input name="Company Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__companyName"
+                                         value="Freelance">
+                              </div>
+                              <div class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer">
+                                  <ul class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList">
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          Strategy development and planning of campaigns that promote the business and
+                                          generate genuine traffic
+                                      </li>
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          SEO Content Creation for Blogs, Website, Social media
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="experiencesContainer-experiencesList-experience">
+                          <div class="experiencesContainer-experiencesList-experience-header">
+                              <div class="experiencesContainer-experiencesList-experience-header-occupationPeriod">
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__startDate"
+                                         name="Experience Start Date"
+                                         value="Jun. 2023"
+                                  >
+                                  <p class="experiencesContainer-experiencesList-experience-header-occupationPeriod__separator">
+                                      &nbsp;-&nbsp;</p>
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__endDate"
+                                         name="Experience End Date"
+                                         value="Present"
+                                  >
+                              </div>
+                              <button class="experiencesContainer-experiencesList-experience-header__mostRecentExperience" disabled>
+                                  most recent
+                              </button>
+                          </div>
+                          <div class="experiencesContainer-experiencesList-experience-description">
+                              <div class="experiencesContainer-experiencesList-experience-description-occupationContainer">
+                                  <input name="Position Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__positionName"
+                                         value="Frontend Developer">
+                                  <input name="Company Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__companyName"
+                                         value="Freelance">
+                              </div>
+                              <div class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer">
+                                  <ul class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList">
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          Strategy development and planning of campaigns that promote the business and
+                                          generate genuine traffic
+                                      </li>
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          SEO Content Creation for Blogs, Website, Social media
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="experiencesContainer-experiencesList-experience">
+                          <div class="experiencesContainer-experiencesList-experience-header">
+                              <div class="experiencesContainer-experiencesList-experience-header-occupationPeriod">
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__startDate"
+                                         name="Experience Start Date"
+                                         value="Jun. 2023"
+                                  >
+                                  <p class="experiencesContainer-experiencesList-experience-header-occupationPeriod__separator">
+                                      &nbsp;-&nbsp;</p>
+                                  <input class="experiencesContainer-experiencesList-experience-header-occupationPeriod__endDate"
+                                         name="Experience End Date"
+                                         value="Present"
+                                  >
+                              </div>
+                              <button class="experiencesContainer-experiencesList-experience-header__mostRecentExperience" disabled>
+                                  most recent
+                              </button>
+                          </div>
+                          <div class="experiencesContainer-experiencesList-experience-description">
+                              <div class="experiencesContainer-experiencesList-experience-description-occupationContainer">
+                                  <input name="Position Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__positionName"
+                                         value="Frontend Developer">
+                                  <input name="Company Name"
+                                         class="experiencesContainer-experiencesList-experience-description-occupationContainer__companyName"
+                                         value="Freelance">
+                              </div>
+                              <div class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer">
+                                  <ul class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList">
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          Strategy development and planning of campaigns that promote the business and
+                                          generate genuine traffic
+                                      </li>
+                                      <li class="experiencesContainer-experiencesList-experience-description-responsibilitiesContainer-responsibilityList__entry">
+                                          SEO Content Creation for Blogs, Website, Social media
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="toolsContainer">
+                <p class="toolsContainer__blockName">Tools</p>
+                <div class="toolsContainer-toolGroupsContainer">
+                    <div class="toolsContainer-toolGroupsContainer-toolGroup">
+                        <p class="toolsContainer-toolGroupsContainer-toolGroup__name">design</p>
+                        <div class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer">
+                            <img src="/src/assets/logoFigma.svg" alt="Figma" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/🦆%20icon%20_adobe%20photoshop_.svg" alt="Photoshop" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/🦆%20icon%20_adobe%20illustrator_.svg" alt="Illustrator" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/🦆%20icon%20_adobe%20premiere_.svg" alt="Premiere Pro" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoNotion.svg" alt="Notion" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoMeet.svg" alt="Google Meet" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="toolsContainer-toolGroupsContainer">
+                    <div class="toolsContainer-toolGroupsContainer-toolGroup">
+                        <p class="toolsContainer-toolGroupsContainer-toolGroup__name">no-code</p>
+                        <div class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer">
+                            <img src="/src/assets/logoZapìer%201.svg" alt="Zapìer" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoWebflow.svg" alt="Webflow" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoFramer.svg" alt="Framer" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoWordpress.svg" alt="Wordpress" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="toolsContainer-toolGroupsContainer">
+                    <div class="toolsContainer-toolGroupsContainer-toolGroup">
+                        <p class="toolsContainer-toolGroupsContainer-toolGroup__name">artificial intelligence</p>
+                        <div class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer">
+                            <img src="/src/assets/logoChatGPT%201.svg" alt="ChatGPT" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoCopilot%201.svg" alt="Copilot" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                            <img src="/src/assets/logoMidjourney%201.svg" alt="Midjourney" class="toolsContainer-toolGroupsContainer-toolGroup-logosContainer__logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="educationAndInterestsContainer">
+                <div class="educationContainer">
+                    <p class="educationContainer__blockName">Education</p>
+                    <div class="educationContainer-infoCards">
+                        <div class="educationContainer-infoCards-card">
+                            <div class="educationContainer-infoCards-card-header">
+                                <input name="Education Period" type="text" class="educationContainer-infoCards-card-header__educationPeriod" value="2023">
+                                <button class="educationContainer-infoCards-card-header__mostRecentEducation">
+                                    <img src="" alt="Set as most recent" class="educationContainer-infoCards-card-header__mostRecentEducationSetter">
+                                </button>
+                            </div>
+                            <div class="educationContainer-infoCards-card-description">
+                                <p class="educationContainer-infoCards-card-header-description__courseName">UI/UX</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseDescription">#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseHost">Coursera</p>
+                            </div>
+                        </div>
+                        <div class="educationContainer-infoCards-card">
+                            <div class="educationContainer-infoCards-card-header">
+                                <input name="Education Period" type="text" class="educationContainer-infoCards-card-header__educationPeriod" value="2023">
+                                <button class="educationContainer-infoCards-card-header__mostRecentEducation">
+                                    <img src="" alt="Set as most recent" class="educationContainer-infoCards-card-header__mostRecentEducationSetter">
+                                </button>
+                            </div>
+                            <div class="educationContainer-infoCards-card-description">
+                                <p class="educationContainer-infoCards-card-header-description__courseName">UI/UX</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseDescription">#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseHost">Coursera</p>
+                            </div>
+                        </div>
+                        <div class="educationContainer-infoCards-card">
+                            <div class="educationContainer-infoCards-card-header">
+                                <input name="Education Period" type="text" class="educationContainer-infoCards-card-header__educationPeriod" value="2023">
+                                <button class="educationContainer-infoCards-card-header__mostRecentEducation">
+                                    <img src="" alt="Set as most recent" class="educationContainer-infoCards-card-header__mostRecentEducationSetter">
+                                </button>
+                            </div>
+                            <div class="educationContainer-infoCards-card-description">
+                                <p class="educationContainer-infoCards-card-header-description__courseName">UI/UX</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseDescription">#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
+                                <p class="educationContainer-infoCards-card-header-description__courseHost">Coursera</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interestsAndFeedbackContainer">
+                    <div class="interestsContainer">
+                        <p class="interestsContainer__blockName">Interests</p>
+                        <div class="interestsContainer-interests">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="branding">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="design">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="photography">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="artificial intelligence">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="illustration">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="typography">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="social networks">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="research">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="drone pilot">
+                            <input name="Interest" type="text" class="interestsContainer-interests__interest"
+                                   value="games">
+                        </div>
+                    </div>
+                    <div class="feedbackContainer">
+                        <input name="Message of encouragement" class="feedbackContainer__encouragementMessage" value="Let´s chat! I´m ready to work on exciting projects">
+                        <input name="Target E-mail" class="feedbackContainer__targetEmail" value="srkarthik.designscape@gmail.com">
+                    </div>
+                </div>
+            </div>
+            <button id="downloadPDF" class="downloadPDF">Download</button>
+        </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

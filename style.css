@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+}
+
+*,*::before,*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,:active { outline: none; }
+a:focus,a:active { outline: none; }
+
+nav,footer,header,aside { display: block; }
+
+html,body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  font-size: 100%;
+  line-height: 1.25;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: grey transparent;
+}
+
+body {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+}
+
+input,button,textarea { font-family: inherit; background-color: transparent; }
+
+input::-ms-clear { display: none; }
+textarea { resize: none; }
+button { cursor: pointer; background-color: transparent; }
+button::-moz-focus-inner { padding: 0;border: 0; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+ul li { list-style: none; }
+img { vertical-align: top; }
+
+h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: 400; line-height: 0.85; }
+
+::placeholder {
+  opacity: 1;
+  color: black;
+  text-transform: uppercase;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0.9375rem 0 0.9375rem 0;
+}
+
+.container {
+  max-width: 37.1875rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.introductionContainer {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.introductionContainer__profilePicture{
+  width: 7.75rem;
+  height: 7.75rem;
+  border-radius: 1rem;
+}
+
+.introductionContainer-introductionMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+  width: 7.75rem;
+  height: 7.75rem;
+  border-radius: 1rem;
+  background-color: #F0F0F0;
+}
+
+.introductionContainer-introductionMessage__staticText {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 150%;
+}
+
+.introductionContainer-introductionMessage-nameAndProfession {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.375rem;
+}
+
+.introductionContainer-introductionMessage-nameAndProfession__name {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.625rem;
+  line-height: 150%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.introductionContainer-introductionMessage-nameAndProfession__profession {
+  background-color: transparent;
+  font-size: 0.625rem;
+  max-width: 100%;
+}
+
+.introductionContainer-proficiencyInLanguages {
+  padding: 0.75rem;
+  width: 100%;
+  height: 7.75rem;
+  border-radius: 1rem;
+  background-color: #F0F0F0;
+}
+
+.introductionContainer-proficiencyInLanguages__blockName {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.introductionContainer-proficiencyInLanguages-proficienciesContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+}
+
+.introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency {
+  width: 100%;
+  display: flex;
+}
+
+.introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__language {
+  display: block;
+  height: calc(0.625rem / 100 * 104);
+  font-size: 0.625rem;
+  line-height: 104%;
+  font-weight: 500;
+  max-width: 3.625rem;
+  overflow: hidden;
+  background-color: transparent;
+}
+.introductionContainer-proficiencyInLanguages-proficienciesContainer-languageProficiency__languageProficiency {
+  height: calc(0.625rem / 100 * 104);
+  width: 0;
+  background-color: #28D979;
+  border-radius: 0.1875rem;
+}
+
+.percent100{
+  width: calc((100% - 3.625rem));
+}
+
+.percent80{
+  width: calc((100% - 3.625rem) / 100 * 80);
+}
+
+.percent20{
+  width: calc((100% - 3.625rem) / 100 * 20);
+}
+
+.experienceAndToolsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiencesContainer {
+  background-color: #F0F0F0;
+  width: 74.72%;
+  height: 22.4375rem;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+.experiencesContainer__blockName {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.experiencesContainer-experiencesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+}
+
+.experiencesContainer-experiencesList-experience {
+  border-radius: 0.625rem;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.experiencesContainer-experiencesList-experience-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiencesContainer-experiencesList-experience-header-occupationPeriod {
+  display: flex;
+  align-items: center;
+}
+
+.experiencesContainer-experiencesList-experience-header-occupationPeriod__startDate, .experiencesContainer-experiencesList-experience-header-occupationPeriod__separator, .experiencesContainer-experiencesList-experience-header-occupationPeriod__endDate {
+  font-size: 0.5rem;
+  display: block;
+  field-sizing: content;
+  height: calc(0.5rem / 100 * 150);
+  font-weight: 500;
+}
+
+.experiencesContainer-experiencesList-experience-header-occupationPeriod__separator {
+  text-align: center;
+  height: fit-content;
+}
+
+.experiencesContainer-experiencesList-experience-header__mostRecentExperience {
+  background-color: #7E731240;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 155%;
+  border-radius: 1rem;
+}
+
+.experiencesContainer-experiencesList-experience-header__mostRecentExperience:disabled {
+  display: none;
+}
+
+.downloadPDF {
+  padding: 1rem;
+  background-color: #000000;
+  color: white;
+  border: 2px solid black;
+  transition: all 0.125s ease-in-out;
+}
+
+.downloadPDF:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
